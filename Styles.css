@@ -1,0 +1,179 @@
+    body {
+        background-color: rgba(rgba(12, 2, 151), rgba(1, 75, 211), rgba(53, 140, 253), rgba(255, 124, 124),rgba(255, 69, 69),rgba(255, 0, 0) alpha); 
+        animation: ColorFondo 1s infinite alternate; 
+    }
+
+    .imagen-derecha {
+    float: right; 
+    margin-left: 15px;
+  }
+
+    @keyframes ColorFondo {
+        0% {
+            background-color: #0407a7; 
+        }
+        50% {
+            background-color: #04479e; 
+        }
+        75% {
+            background-color: #ff5656; 
+        }
+    
+        100% {
+            background-color: #ff0000bb; 
+        }
+
+        200% {
+            background-color: #00d9ffbb; 
+        }
+
+        }
+
+    p{
+        color: antiquewhite;
+    }
+
+    .movie{
+        color: rgb(190, 247, 255);
+    }
+
+    #movie2{
+        color: rgb(215, 255, 175);
+    }
+
+    .strenght{
+        color: rgb(177, 255, 247);
+    }
+
+    .Curiosidades{
+        color: rgb(255, 171, 171);
+    }
+    img {
+  cursor: pointer; 
+}
+
+button:hover {
+  cursor: n-resize; 
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden-checkbox:checked ~ .modal {
+  display: block;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.full-image {
+  width: 660px;
+  height: 500px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.mi-imagen {
+  animation: slideOutLeft 12s infinite; 
+width: 660px;
+  height: 400px;
+
+}
+
+
+.scroll-container {
+  height: 500px; 
+  overflow: auto; 
+}
+
+.imagen {
+  display: block; 
+  position: sticky; 
+  top: 0; 
+  width: 50%; 
+}
+
+.imagen-visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.imagen-oculta {
+  opacity: 0;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@keyframes changeImage {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.imagen-visible.fade-out {
+  animation: changeImage 1s forwards; 
+}
+
+.pequeña {
+  width: 100px;
+  height: 100px;
+}
+.Gear5{
+width: 200px;
+height: 200px;
+  position: 100px
+
+}
+
+
+.anuncio-especial {
+        display: none;
+    }
+
+      .clase-anuncio {
+        display: none;
+    }
